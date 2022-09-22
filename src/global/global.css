@@ -1,0 +1,82 @@
+/* -------------------- */
+/* Custom Properties  */
+/* --------------------- */
+
+:root{
+
+    /* Buttons colors */
+    --btn-clr-primary: #377BF5;
+    --btn-clr-warning: #EA3D2F ;
+    --btn-clr-positive: #2EA94F;
+    --btn-clr-attention: #F3A72E;
+    --clr-white: #ffffff;
+    --btn-clr-primary-light:#E5EFFF;
+    --btn-clr-warning-light: #FEE4E2;
+    --btn-clr-positive-light: #DCF7E3;
+    --btn-clr-attention-light: #FCF3D7;
+    --btn-clr-primary-outline:#A5C4FA;
+    --btn-clr-warning-outline:#FABFBB;
+    --btn-clr-positive-outline:#9CD6AC;
+    --btn-clr-attention-outline:#FBDAA6;
+
+
+       /* font-size */
+       --fs-900: 9.375rem;
+       --fs-800: 6.25rem;
+       --fs-700: 3.5rem;
+       --fs-600: 2rem;
+       --fs-500: 1.75rem;
+       --fs-400: 1.125rem;
+       --fs-300: 1rem;
+       --fs-200: 0.875rem;
+
+        /* font-families */
+        --ff-roboto: 'Roboto', sans-serif;;
+        --ff-quick-sand: 'Quicksand', sans-serif;
+       
+    
+}
+body{
+    margin: 0;
+    padding: 1.5em;
+    font-family: var(--ff-quick-sand);
+    font-size: var(--fs-300);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{ 
+    margin: 0;
+}
+
+
+
+/* -------------------- */
+/* Utility Classes  */
+/* --------------------- */
+.flex{
+    display: flex;
+    gap: var(--gap, 2em);
+    margin-top: 2em;
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1em)
+}
+
+.container{
+    padding-inline: 2em;
+    max-width: 80rem;
+    margin-inline:  auto; 
+
+}

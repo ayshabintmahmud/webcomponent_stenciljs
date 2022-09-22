@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <!-- css linking -->
+    <link rel="stylesheet" href="/build/test-design-system.css">
+    <!-- Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Scrpt run only on mordern browser. With update stuff -->
+    <script type="module" src="/build/test-design-system.esm.js"></script> 
+ <!-- only FOR Ie browser -->
+    <script nomodule src="/build/test-design-system.js"></script>
+
+    <!-- Feather icon  -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <my-component first="Hey There!" last="These are a collection of Button component you can use. Made with Stencil"></my-component>
+    <div class="flex">
+      <my-button text="BUTTON" appearance="btn-primary" type="btn"></my-button>
+      <my-button text="SMOOTH" appearance="btn-primary-light" type="btn"></my-button>
+      <my-button text="GHOST" appearance="btn-primary-outline" type="btn"></my-button>
+      <my-button text="RAISED" appearance="btn-primary-raised" type="btn"></my-button>
+      
+      <my-button text="PREVIOUS" appearance="btn-primary-rounded" type="btn"> <i class="gg-arrow-left"></i></my-button>
+    </div>
+
+    <div class="flex">
+      <my-button text="BUTTON" appearance="btn-warning" type="btn"></my-button>
+      <my-button text="SMOOTH" appearance="btn-warning-light" type="btn"></my-button>
+      <my-button text="GHOST" appearance="btn-warning-outline" type="btn"></my-button>
+      <my-button text="RAISED" appearance="btn-warning-raised" type="btn"></my-button>
+      <my-button text="WARNING" appearance="btn-warning-rounded" type="btn"></i></my-button>
+    </div>
+
+    <div class="flex">
+      <my-button text="BUTTON" appearance="btn-positive" type="btn"></my-button>
+      <my-button text="SMOOTH" appearance="btn-positive-light" type="btn"></my-button>
+      <my-button text="GHOST" appearance="btn-positive-outline" type="btn"></my-button>
+      <my-button text="RAISED" appearance="btn-positive-raised" type="btn"></my-button>
+      <my-button text="POSITIVE" appearance="btn-positive-rounded" type="btn"></my-button>
+    </div>
+
+    <div class="flex">
+      <my-button text="BUTTON" appearance="btn-attention" type="btn"></my-button>
+      <my-button text="SMOOTH" appearance="btn-attention-light" type="btn"></my-button>
+      <my-button text="GHOST" appearance="btn-attention-outline" type="btn"></my-button>
+      <my-button text="RAISED" appearance="btn-attention-raised" type="btn"></my-button>
+      <my-button text="DODONG" appearance="btn-attention-rounded" type="btn"></my-button>
+    </div>
+
+    <div class="flex">
+      <my-button text="+" type="btn-plus-round" appearance="btn-primary"></my-button>
+      <my-button text="+" type="btn-plus-round" appearance="btn-primary-light"></my-button>
+      <my-button text="+" type="btn-plus-round" appearance="btn-primary-outline btn-plus-border"></my-button>
+      <my-button text="+" type="btn-plus-round" appearance="btn-primary-raised"></my-button>
+      <my-button text="+" type="btn-plus" appearance="btn-primary"></my-button>
+      <my-button text="+" type="btn-plus" appearance="btn-primary-light"></my-button>
+      <my-button text="+" type="btn-plus" appearance="btn-primary-outline btn-plus-border"></my-button>
+      <my-button text="+" type="btn-plus" appearance="btn-primary-raised"></my-button>
+    </div>
+   
+    
+  </body>
+</html>
