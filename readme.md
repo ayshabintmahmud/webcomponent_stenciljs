@@ -1,4 +1,4 @@
-#Building web componet with Stenciljs
+Building web componet with Stenciljs
 
 My-button Componets Preview below:
 
