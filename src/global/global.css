@@ -74,9 +74,8 @@ p{
     gap: var(--gap, 1em)
 }
 
-.container{
-    padding-inline: 2em;
-    max-width: 80rem;
-    margin-inline:  auto; 
 
+.container{
+    padding: 3em;
+    margin-inline:  auto; 
 }

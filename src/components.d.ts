@@ -25,6 +25,17 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface MyModal {
+        "appearance": string;
+        "buttons": string;
+        "closeIcon": string;
+        "header": string;
+        "isopen": boolean;
+    }
+}
+export interface MyModalCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLMyModalElement;
 }
 declare global {
     interface HTMLMyButtonElement extends Components.MyButton, HTMLStencilElement {
@@ -39,9 +50,16 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLMyModalElement extends Components.MyModal, HTMLStencilElement {
+    }
+    var HTMLMyModalElement: {
+        prototype: HTMLMyModalElement;
+        new (): HTMLMyModalElement;
+    };
     interface HTMLElementTagNameMap {
         "my-button": HTMLMyButtonElement;
         "my-component": HTMLMyComponentElement;
+        "my-modal": HTMLMyModalElement;
     }
 }
 declare namespace LocalJSX {
@@ -64,9 +82,18 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface MyModal {
+        "appearance"?: string;
+        "buttons"?: string;
+        "closeIcon"?: string;
+        "header"?: string;
+        "isopen"?: boolean;
+        "onAction"?: (event: MyModalCustomEvent<any>) => void;
+    }
     interface IntrinsicElements {
         "my-button": MyButton;
         "my-component": MyComponent;
+        "my-modal": MyModal;
     }
 }
 export { LocalJSX as JSX };
@@ -75,6 +102,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-button": LocalJSX.MyButton & JSXBase.HTMLAttributes<HTMLMyButtonElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "my-modal": LocalJSX.MyModal & JSXBase.HTMLAttributes<HTMLMyModalElement>;
         }
     }
 }

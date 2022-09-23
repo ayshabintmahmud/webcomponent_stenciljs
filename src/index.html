@@ -19,7 +19,12 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
+    <my-button text="Click to Open Modal" appearance="btn-primary" type="btn" class="container"></my-button>
+
+    <my-modal buttons='[{"text": "Confirm"}, { "text": "Cancel"}]' header="Newsletter Subscription" appearance="btn-positive"> Hey! Please confirm you would like to be recieving my newsletter. </my-modal>
+
     <my-component first="Hey There!" last="These are a collection of Button component you can use. Made with Stencil"></my-component>
+
     <div class="flex">
       <my-button text="BUTTON" appearance="btn-primary" type="btn"></my-button>
       <my-button text="SMOOTH" appearance="btn-primary-light" type="btn"></my-button>
@@ -66,4 +71,16 @@
    
     
   </body>
+  <script>
+    var btn = document.querySelector('my-button');
+    var modal = document.querySelector('my-modal');
+
+    btn.addEventListener('click', function (){
+        modal.isopen = true ;
+    })
+
+    modal.addEventListener('action', function () {
+      alert ("Confirm Button Pressed.");
+    })
+  </script>
 </html>
