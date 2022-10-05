@@ -16,5 +16,5 @@ my-modal Component Preview below:
 my-toast componenent Preview. Comes in red, yellow, green, and blue color. Each denoting intention of the message.
 
 
-<img width="714" alt="Screenshot 2022-10-05 at 13 34 51" src="https://user-images.githubusercontent.com/40881194/194061615-8d0cb5c1-ec4e-44fd-b0f7-c08129437646.png">
+<img width="597" alt="Screenshot 2022-10-05 at 13 37 16" src="https://user-images.githubusercontent.com/40881194/194061855-33a82c99-6308-437f-8fef-13e6e93f925d.png">
 
