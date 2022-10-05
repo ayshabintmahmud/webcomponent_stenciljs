@@ -16,7 +16,7 @@ export class MyToast {
   })
 
   @Prop() isopen: boolean;
-
+  @Prop() appearance: string;
   @Prop() closeIcon = 'x.svg';
   @Prop() checkIcon = 'bell.svg';
 
@@ -31,7 +31,7 @@ export class MyToast {
   render() {
     return (
      
-        <div class={"toast-style show toast"} id='toast'>
+        <div class={`toast-style  toast ${this.isopen && 'show'} ${this.appearance}`} >
           {/* <img src={getAssetPath(`./assets/${this.checkIcon}`)} alt="Success Icon" /> */}
           <p class="toast-body">This is a toast. And it is amzing</p>
           <div class="close" onClick={this.cancle}>

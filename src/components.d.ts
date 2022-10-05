@@ -33,6 +33,7 @@ export namespace Components {
         "isopen": boolean;
     }
     interface MyToast {
+        "appearance": string;
         "checkIcon": string;
         "closeIcon": string;
         "isopen": boolean;
@@ -103,6 +104,7 @@ declare namespace LocalJSX {
         "onAction"?: (event: MyModalCustomEvent<any>) => void;
     }
     interface MyToast {
+        "appearance"?: string;
         "checkIcon"?: string;
         "closeIcon"?: string;
         "isopen"?: boolean;

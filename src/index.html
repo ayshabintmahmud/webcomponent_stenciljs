@@ -23,9 +23,10 @@
 
     <my-modal buttons='[{"text": "Confirm"}, { "text": "Cancel"}]' header="Newsletter Subscription" appearance="btn-positive"> Hey! Please confirm you would like to be recieving my newsletter. </my-modal>
 
-    <my-button text="Click to Show toast" appearance="btn-primary" type="btn" class="container" onclick="myFunction()"></my-button>
+    <my-button text="Click to Show toast" appearance="btn-primary" type="btn" class="showToast"></my-button>
 
-    <my-toast></my-toast>
+    <my-toast appearance="toast-positive" ></my-toast>
+    
     <my-component first="Hey There!" last="These are a collection of Button component you can use. Made with Stencil"></my-component>
 
     <div class="flex">
@@ -87,26 +88,14 @@
     })
 
     // show Toast
-    var btnToast = document.querySelector('my-button');
+    var btnToast = document.querySelector('.showToast');
     var toast = document.querySelector('my-toast');
-    // var toast = document.getElementById('toast');
+
 
     btnToast.addEventListener('click', function (){
-        toast.isopen = true ;
-    })
+      toast.isopen = true;
+      setTimeout(function(){ toast.isopen = false }, 3000)
+    } )
 
-    // modal.addEventListener('action', function () {
-    //   alert ("Confirm Button Pressed.");
-    // })
-
-//     btnToast.addEventListener('click', function handleClick() {
-//   if (toast.style.display === 'none') {
-//     toast.style.display = 'block';
-//   } else {
-//     toast.style.display = 'none';
-//   }
-// });
-
-  
   </script>
 </html>
